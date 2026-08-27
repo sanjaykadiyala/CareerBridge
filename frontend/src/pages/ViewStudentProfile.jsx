@@ -21,7 +21,7 @@ function ViewStudentProfile() {
     async function loadStudentProfile() {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/student-profiles/${userId}`,
+          `/api/student-profiles/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

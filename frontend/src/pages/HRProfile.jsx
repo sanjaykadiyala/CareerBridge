@@ -47,7 +47,7 @@ function HRProfile() {
     async function loadProfile() {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/hr-profiles/me",
+          "/api/hr-profiles/me",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -110,7 +110,7 @@ function HRProfile() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/hr-profiles/me",
+        "/api/hr-profiles/me",
         {
           method: "PUT",
           headers: {
