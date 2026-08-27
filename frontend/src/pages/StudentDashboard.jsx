@@ -35,7 +35,7 @@ function StudentDashboard() {
     async function loadDashboardStats() {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/dashboard/student",
+          "/api/dashboard/student",
           {
             headers: {
               Authorization: `Bearer ${token}`,

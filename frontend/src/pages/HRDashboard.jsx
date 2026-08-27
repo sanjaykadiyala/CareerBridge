@@ -35,7 +35,7 @@ function HRDashboard() {
     async function loadDashboardStats() {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/dashboard/hr",
+          "/api/dashboard/hr",
           {
             headers: {
               Authorization: `Bearer ${token}`,

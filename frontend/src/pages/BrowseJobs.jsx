@@ -41,14 +41,14 @@ function BrowseJobs() {
     async function loadJobsAndApplications() {
       try {
         const [jobsResponse, applicationsResponse] = await Promise.all([
-          fetch("http://localhost:5000/api/jobs", {
+          fetch("/api/jobs", {
             headers: {
               Authorization: `Bearer ${token}`,
             },
             signal: controller.signal,
           }),
 
-          fetch("http://localhost:5000/api/applications/mine", {
+          fetch("/api/applications/mine", {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -141,7 +141,7 @@ function BrowseJobs() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/applications/${jobId}`,
+        `/api/applications/${jobId}`,
         {
           method: "POST",
           headers: {

@@ -32,7 +32,7 @@ function ManageJobs() {
     async function loadMyJobs() {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/jobs/mine",
+          "/api/jobs/mine",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ function ManageJobs() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/applications/job/${job._id}`,
+        `/api/applications/job/${job._id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -93,7 +93,7 @@ function ManageJobs() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/applications/${applicationId}/status`,
+        `/api/applications/${applicationId}/status`,
         {
           method: "PATCH",
           headers: {
