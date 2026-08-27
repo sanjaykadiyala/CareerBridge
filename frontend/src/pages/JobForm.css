@@ -1,0 +1,132 @@
+.job-form-page {
+  min-height: 100vh;
+  color: #172033;
+  background: #f4f7fb;
+}
+
+.job-form-header {
+  height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.job-form-header a {
+  color: #0f766e;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.job-form-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 45px 25px;
+}
+
+.job-form-title {
+  margin-bottom: 25px;
+}
+
+.job-form-title p {
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.job-form-title h1 {
+  margin: 8px 0;
+  font-size: 36px;
+}
+
+.job-form-title span {
+  color: #64748b;
+}
+
+.job-form-card {
+  padding: 35px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px #0f172a0d;
+}
+
+.job-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.job-form-grid .full-width {
+  grid-column: 1 / -1;
+}
+
+.job-form-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.job-form-card input,
+.job-form-card select,
+.job-form-card textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  outline: none;
+  font: inherit;
+}
+
+.job-form-card textarea {
+  resize: vertical;
+}
+
+.job-form-card input:focus,
+.job-form-card select:focus,
+.job-form-card textarea:focus {
+  border-color: #0f766e;
+}
+
+.post-job-button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  color: white;
+  background: #0f766e;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.job-message {
+  margin: 22px 0 0;
+  padding: 12px;
+  border-radius: 7px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.job-message.success {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.job-message.error {
+  color: #991b1b;
+  background: #fee2e2;
+}
+
+@media (max-width: 650px) {
+  .job-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-form-grid .full-width {
+    grid-column: auto;
+  }
+}

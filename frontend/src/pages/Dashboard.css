@@ -1,0 +1,156 @@
+.dashboard-page {
+  min-height: 100vh;
+  color: #172033;
+  background: #f4f7fb;
+}
+
+.dashboard-nav {
+  height: 72px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.dashboard-logo span {
+  color: #2563eb;
+}
+
+.dashboard-account {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+}
+
+.dashboard-account button {
+  padding: 9px 16px;
+  color: #dc2626;
+  background: white;
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.dashboard-main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px 25px;
+}
+
+.dashboard-welcome {
+  padding: 40px;
+  color: white;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  border-radius: 16px;
+}
+
+.dashboard-welcome p {
+  margin: 0;
+  color: #bfdbfe;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.dashboard-welcome h1 {
+  margin: 13px 0 8px;
+  font-size: 36px;
+}
+
+.hr-dashboard .dashboard-welcome {
+  background: linear-gradient(135deg, #115e59, #0f766e);
+}
+
+.dashboard-stats {
+  margin: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dashboard-stats article {
+  padding: 25px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.dashboard-stats strong,
+.dashboard-stats span {
+  display: block;
+}
+
+.dashboard-stats strong {
+  margin-bottom: 7px;
+  color: #2563eb;
+  font-size: 30px;
+}
+
+.hr-dashboard .dashboard-stats strong {
+  color: #0f766e;
+}
+
+.dashboard-stats span {
+  color: #64748b;
+}
+
+.dashboard-section {
+  padding: 30px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.dashboard-section h2 {
+  margin-top: 0;
+}
+
+.dashboard-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.dashboard-actions button {
+  padding: 20px;
+  color: #1e40af;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hr-dashboard .dashboard-actions button {
+  color: #115e59;
+  background: #f0fdfa;
+  border-color: #99f6e4;
+}
+
+@media (max-width: 700px) {
+  .dashboard-stats,
+  .dashboard-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-account span {
+    display: none;
+  }
+}
+.dashboard-error-message {
+  margin: 20px 0;
+  padding: 14px 18px;
+  border-left: 5px solid #dc2626;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-weight: 600;
+}
